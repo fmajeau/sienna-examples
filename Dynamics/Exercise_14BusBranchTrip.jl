@@ -1,6 +1,12 @@
 # Exercise: Dynamic simulation of 14 Bus Base Case branch trip
 # In this exercise, you will create a dynamic simulation with a branch trip of your choosing.
 
+# Set up the package environment
+cd(@__DIR__)      # go to the directory of this script
+using Pkg         # use the package manager
+Pkg.activate(".") # activate the environment defined by the toml files in this directory
+Pkg.instantiate() # install missing dependencies, make sure environment is ready to use
+
 # Import packages
 using PowerSystems
 using PowerSystemCaseBuilder
@@ -20,7 +26,7 @@ show_systems() # all of the available systems
 show_systems(PSIDSystems) # systems within one category
 
 # Find "14 Bus Base Case" within the PSIDSystems category and build it.
-system = """TODO"""
+system = """ TODO """
 
 
 # Defining the perturbation
